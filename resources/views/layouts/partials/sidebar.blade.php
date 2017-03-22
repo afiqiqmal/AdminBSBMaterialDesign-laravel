@@ -52,12 +52,6 @@
                             <span>Widgets</span>
                         </a>
                     </li>
-                    <li {{Route::is('form')? 'class=active':''}}>
-                        <a href="{{route('form')}}">
-                            <i class="material-icons">assignment</i>
-                            <span>Forms</span>
-                        </a>
-                    </li>
                     <li {{Route::is('table')? 'class=active':''}}>
                         <a href="{{route('table')}}">
                             <i class="material-icons">view_list</i>

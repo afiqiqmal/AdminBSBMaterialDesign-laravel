@@ -20,6 +20,5 @@ Route::group(['middleware'=>'guest'],function(){
 	Route::get('/widget',['as'=>'widget','uses'=>'WidgetController@index']);
 	Route::get('/table',['as'=>'table','uses'=>'TableController@index']);
 	Route::get('/media',['as'=>'media','uses'=>'MediaController@index']);
-	Route::get('/form',['as'=>'form','uses'=>'FormController@index']);
 	Route::get('/chart',['as'=>'chart','uses'=>'ChartController@index']);
 });
