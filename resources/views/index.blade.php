@@ -22,6 +22,8 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
     @show
+
+    @yield('extra-css')
 </head>
 
 <body class="theme-red">
@@ -46,7 +48,6 @@
     @section('script-bottom')
         {{Html::script('bsbmd/js/admin.js')}}
         {{Html::script('bsbmd/js/demo.js')}}
-
     @show
 </body>
 
