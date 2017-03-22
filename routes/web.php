@@ -11,10 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+Route::group(['middleware'=>'guest'],function(){
+	Route::get('/',['as'=>'dashboard','uses'=>'DashboardController@index']);
+	Route::get('/typography',['as'=>'typography','uses'=>'TypographyController@index']);
+	Route::get('/helper',['as'=>'helper','uses'=>'HelperController@index']);
+	Route::get('/widget',['as'=>'widget','uses'=>'WidgetController@index']);
+	Route::get('/table',['as'=>'table','uses'=>'TableController@index']);
+	Route::get('/media',['as'=>'media','uses'=>'MediaController@index']);
+	Route::get('/form',['as'=>'form','uses'=>'FormController@index']);
+	Route::get('/chart',['as'=>'chart','uses'=>'ChartController@index']);
+});
