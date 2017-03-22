@@ -1,12 +1,11 @@
 AdminBSB - Material Design in Laravel
 --------------------------------------
 
-
 **AdminBSB - Material Design is a fully responsive and free admin template.** It was developed with [Bootstrap 3.x Framework](http://getbootstrap.com) and [Google Material Design](https://material.google.com) of powers.
 
 Demo
 ----------------
-You can check the website preview with **[this link]()**  
+You can check the website preview with **[this link](https://adminbsblaravel.herokuapp.com/)**  
 
 Installation
 ----------------
@@ -15,6 +14,7 @@ Installation
 - ```composer update ```
 - done
 
+if you want to deploy to heroku.. enable ```\URL::forceScheme('https');``` in AppServiceProvider
 
 Documentation
 ----------
@@ -28,7 +28,6 @@ Browser Support
 - Google Chrome (Latest)
 - Opera (Latest)
 - Safari (Latest)
-
 
 License
 ----------
