@@ -13,7 +13,7 @@ Installation
 ----------------
 - Clone
 - ```npm install ```
-- ```composer update ```
+- ```composer update --prefer-source```
 - done
 
 if you want to deploy to heroku.. enable ```\URL::forceScheme('https');``` in AppServiceProvider
